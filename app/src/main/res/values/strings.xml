@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Subtitler</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Intent Fragment</string>
+    <string name="service_fragment_label">Service Fragment</string>
+    <string name="intent_recog">Intent</string>
+    <string name="service_recog">Service</string>
+    <string name="previous">Previous</string>
+
+    <string name="speak_start">Start recognition</string>
+    <string name="speak_stop">Stop recognition</string>
+</resources>

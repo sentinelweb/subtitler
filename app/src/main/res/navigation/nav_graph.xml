@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="uk.co.sentinelweb.subtitler.ui.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_First_to_Intent"
+            app:destination="@id/IntentFragment" />
+        <action
+            android:id="@+id/action_First_to_Service"
+            app:destination="@id/ServiceFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/IntentFragment"
+        android:name="uk.co.sentinelweb.subtitler.ui.RecogniserIntentFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_Intent_to_First"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ServiceFragment"
+        android:name="uk.co.sentinelweb.subtitler.ui.rsf.RecogniserServiceFragment"
+        android:label="@string/service_fragment_label"
+        tools:layout="@layout/fragment_service">
+
+        <action
+            android:id="@+id/action_Service_to_First"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>
